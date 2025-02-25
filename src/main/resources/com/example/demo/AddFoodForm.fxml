@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.AddFoodFormController">
+   <children>
+      <TextField fx:id="Id" layoutX="245.0" layoutY="110.0" promptText="Enter ID" AnchorPane.bottomAnchor="439.0" AnchorPane.leftAnchor="245.0" AnchorPane.rightAnchor="257.0" AnchorPane.topAnchor="110.0" />
+      <TextField fx:id="FoodName" layoutX="245.0" layoutY="179.0" promptText="Enter Name" AnchorPane.bottomAnchor="370.0" AnchorPane.leftAnchor="245.0" AnchorPane.rightAnchor="257.0" AnchorPane.topAnchor="179.0" />
+      <TextField fx:id="FoodCategory" layoutX="245.0" layoutY="255.0" promptText="Enter Category" />
+      <TextField fx:id="FoodPrice" layoutX="245.0" layoutY="331.0" promptText="Enter Price" />
+      <Button fx:id="Button" layoutX="342.0" layoutY="440.0" mnemonicParsing="false" onAction="#AddFood" text="Submit" />
+   </children>
+</AnchorPane>

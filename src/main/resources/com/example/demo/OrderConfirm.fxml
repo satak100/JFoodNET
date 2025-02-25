@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="110.0" prefWidth="434.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.OrderConfirmController">
+   <children>
+      <Button fx:id="yesButton" layoutX="77.0" layoutY="65.0" mnemonicParsing="false" onAction="#yesClick" text="Yes" />
+      <Button fx:id="noButton" layoutX="277.0" layoutY="65.0" mnemonicParsing="false" onAction="#noClick" text="No" />
+      <Label layoutX="181.0" layoutY="24.0" text="Confirm Order" />
+   </children>
+</AnchorPane>

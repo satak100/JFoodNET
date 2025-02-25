@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.FoodCustomerAfterLoginController">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="807.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="113.0">
+         <image>
+            <Image url="@../../../Image/black-background-design.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="283.0" layoutY="22.0" prefHeight="50.0" prefWidth="211.0" style="-fx-background-color: #FFFFFF;" text="   Food Menu" textAlignment="CENTER" AnchorPane.bottomAnchor="528.0" AnchorPane.leftAnchor="283.0" AnchorPane.rightAnchor="306.0" AnchorPane.topAnchor="22.0">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="28.0" />
+         </font>
+      </Label>
+      <ListView fx:id="FoodList" layoutX="302.0" layoutY="278.0" prefHeight="282.0" prefWidth="348.0" style="-fx-background-color: #AFEEEE;" AnchorPane.bottomAnchor="53.0" AnchorPane.leftAnchor="302.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="278.0" />
+      <ListView fx:id="RestaurantList" layoutX="14.0" layoutY="278.0" prefHeight="282.0" prefWidth="280.0" style="-fx-background-color: #FFEFD5;" />
+      <Button fx:id="searchButton" layoutX="206.0" layoutY="222.0" mnemonicParsing="false" onAction="#searchRestaurantFunc" prefHeight="37.0" prefWidth="88.0" text="Search">
+         <font>
+            <Font size="19.0" />
+         </font></Button>
+      <Button fx:id="reloadButton" layoutX="657.0" layoutY="14.0" mnemonicParsing="false" onAction="#reload" prefHeight="17.0" prefWidth="136.0" text="Reload" />
+      <ChoiceBox fx:id="RestaurantChoiceBox" layoutX="14.0" layoutY="155.0" prefHeight="51.0" prefWidth="280.0" style="-fx-background-color: #FFEFD5;" />
+      <TextField fx:id="search" layoutX="14.0" layoutY="217.0" prefHeight="51.0" prefWidth="183.0" promptText="Restaurant_Name">
+         <font>
+            <Font name="Comic Sans MS Bold" size="19.0" />
+         </font></TextField>
+      <TextField fx:id="search1" layoutX="302.0" layoutY="219.0" prefHeight="51.0" prefWidth="254.0" promptText="Food_Name">
+         <font>
+            <Font name="Comic Sans MS Bold" size="19.0" />
+         </font>
+      </TextField>
+      <Button fx:id="searchButton1" layoutX="566.0" layoutY="224.0" mnemonicParsing="false" onAction="#searchRestaurantFunc" prefHeight="37.0" prefWidth="88.0" text="Search">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <ChoiceBox fx:id="FoodChoiceBox" layoutX="302.0" layoutY="155.0" prefHeight="51.0" prefWidth="355.0" style="-fx-background-color: #FFEFD5;" />
+   </children>
+</AnchorPane>

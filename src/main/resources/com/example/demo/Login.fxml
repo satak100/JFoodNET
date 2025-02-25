@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.LoginController">
+   <children>
+      <ImageView fitHeight="660.0" fitWidth="466.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Image/Screenshot%202023-09-10%20162026.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="561.0" layoutY="230.0" text="Username">
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#c41553" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+         <font>
+            <Font name="Bell MT Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="564.0" layoutY="341.0" text="Password">
+         <font>
+            <Font name="Bell MT Bold" size="28.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#c41553" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <TextField fx:id="Username" layoutX="488.0" layoutY="265.0" promptText="Username" AnchorPane.bottomAnchor="284.0" AnchorPane.leftAnchor="488.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="265.0" />
+      <Button fx:id="LogIn" layoutX="561.0" layoutY="469.0" mnemonicParsing="false" onAction="#userLogIn" prefHeight="63.0" prefWidth="123.0" style="-fx-background-color: #c41553;" text="Log In" textFill="#e5e1e5" AnchorPane.bottomAnchor="68.0" AnchorPane.leftAnchor="561.0" AnchorPane.rightAnchor="116.0" AnchorPane.topAnchor="469.0">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font></Button>
+      <Label fx:id="WrongLogin" layoutX="593.0" layoutY="178.0" textFill="#282222" AnchorPane.bottomAnchor="387.0" AnchorPane.leftAnchor="593.0" AnchorPane.rightAnchor="207.0" AnchorPane.topAnchor="178.0" />
+      <PasswordField fx:id="Password" layoutX="488.0" layoutY="376.0" promptText="Password" AnchorPane.bottomAnchor="173.0" AnchorPane.leftAnchor="488.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="376.0" />
+   </children>
+</AnchorPane>
