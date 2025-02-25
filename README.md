@@ -10,9 +10,6 @@
 
 ## 🔧 **How to Run?**  
 1️⃣ **Clone the Repository**  
-```sh
-git clone https://github.com/YOUR-USERNAME/JFoodNet.git
-cd JFoodNet
 2️⃣ Run the Server
 3️⃣ Run the Customer Client
 4️⃣ Run the Restaurant Client
